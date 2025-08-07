@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supportify</title>
+  <link rel="icon" type="image/webp" href="boblogo.jpg" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="left-section">
+      <div class="brand">
+        <img src="boblogo.jpg" alt="" class="brand-logo" style="height:32px;width:32px;vertical-align:middle;margin-right:8px;">
+        Supportify
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="chat-container">
+      <div class="chat-messages" id="chatMessages">
+        <div class="message">
+          <!-- <div class="message-avatar assistant-avatar">S</div> -->
+          <div class="message-content">
+            <div class="message-header">
+              <span class="message-sender"></span>
+            </div>
+            <div class="message-text">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="thinking-indicator" id="thinkingIndicator">
+          <div class="thinking-dots">
+            <div class="thinking-dot"></div>
+            <div class="thinking-dot"></div>
+            <div class="thinking-dot"></div>
+          </div>
+          <span>Supportify is thinking...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Section -->
+  <div class="input-section">
+    <div class="input-container">
+      <div class="input-wrapper">
+        <textarea 
+          id="messageInput" 
+          class="message-input" 
+          placeholder="Reply to Supportfy..."
+          rows="1"
+        ></textarea>
+        <div class="input-actions">
+          <button class="action-btn send-btn" id="sendBtn" title="Send message">
+            <span>↑</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info">
+      Supportify can make mistakes. Please double-check responses.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
