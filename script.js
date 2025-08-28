@@ -32,7 +32,7 @@ async function sendMessage() {
     try {
         // Make API request
         let session_id = localStorage.getItem('supportify_session_id');
-
+        console.log("Using session ID:", session_id);
         const response = await fetch('https://supportify-bob-ai.onrender.com/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
